@@ -25,7 +25,6 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="@string/cd_edit" />
 
-    <!-- ── AVATAR ── -->
     <ImageView
         android:id="@+id/img_avatar"
         android:layout_width="90dp"
@@ -38,7 +37,6 @@
         android:clipToOutline="true"
         android:contentDescription="@string/cd_avatar" />
 
-    <!-- ── NAME ── -->
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
@@ -51,7 +49,6 @@
         android:textStyle="bold"
         android:textColor="@color/text_primary" />
 
-    <!-- ── LOCATION ── -->
     <TextView
         android:id="@+id/tv_location"
         android:layout_width="wrap_content"
@@ -63,8 +60,7 @@
         android:textSize="13sp"
         android:textColor="@color/text_hint" />
 
-    <!-- ── STATS BAR ── -->
-    <LinearLayout
+   <LinearLayout
         android:id="@+id/layout_stats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -152,7 +148,6 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- ── MENU ITEMS ── -->
     <TextView
         android:id="@+id/tv_personalInfo"
         android:layout_width="match_parent"
