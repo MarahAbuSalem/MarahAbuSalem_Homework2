@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_screen">
 
-    <!-- ── TOP BAR ── -->
+
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="40dp"
@@ -29,7 +29,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ── AVATAR ── -->
+
     <ImageView
         android:id="@+id/img_avatar"
         android:layout_width="90dp"
@@ -45,7 +45,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" /> />
 
-    <!-- ── STAR RATING ── -->
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="wrap_content"
@@ -61,7 +60,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ── NAME ── -->
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
@@ -75,7 +73,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- ── LOCATION ── -->
     <TextView
         android:id="@+id/tv_location"
         android:layout_width="wrap_content"
@@ -95,9 +92,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
+        android:layout_marginHorizontal="24dp"
         android:orientation="vertical"
         android:gravity="center"
         android:padding="12dp"
+        android:elevation="8dp"
         android:background="@drawable/stats_bar_bg"
         app:layout_constraintTop_toBottomOf="@id/tv_location"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,6 +126,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="12dp"
+        android:elevation="8dp"
         android:background="@drawable/stats_bar_bg"
         app:layout_constraintTop_toBottomOf="@id/tv_location"
         app:layout_constraintStart_toEndOf="@id/statBalance"
@@ -155,6 +155,7 @@
         android:orientation="vertical"
         android:gravity="center"
         android:padding="12dp"
+        android:elevation="8dp"
         android:background="@drawable/stats_bar_bg"
         app:layout_constraintTop_toBottomOf="@id/tv_location"
         app:layout_constraintStart_toEndOf="@id/tv_orders"
@@ -178,8 +179,8 @@
     <TextView
         android:id="@+id/tv_personalInfo"
         android:layout_width="0dp"
-        android:layout_height="35dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="30dp"
         android:layout_marginHorizontal="20dp"
         android:text="@string/menu_personal_info"
         android:textSize="14sp"
@@ -205,7 +206,7 @@
     <TextView
         android:id="@+id/tv_order"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="20dp"
         android:text="@string/menu_your_order"
         android:textSize="14sp"
@@ -231,7 +232,7 @@
     <TextView
         android:id="@+id/tv_favourites"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="20dp"
         android:text="@string/menu_favourites"
         android:textSize="14sp"
@@ -244,15 +245,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <View android:id="@+id/div3" android:layout_width="0dp" android:layout_height="1dp"
-        android:layout_marginHorizontal="16dp" android:background="@color/divider"
+    <View
+        android:id="@+id/div3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
+        android:background="@color/divider"
         app:layout_constraintTop_toBottomOf="@id/tv_favourites"
-        app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <TextView
         android:id="@+id/tv_payment"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="20dp"
         android:text="@string/menu_payment"
         android:textSize="14sp"
@@ -278,7 +284,7 @@
     <TextView
         android:id="@+id/tv_recommended"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="20dp"
         android:text="@string/menu_recommended"
         android:textSize="14sp"
@@ -304,7 +310,7 @@
     <TextView
         android:id="@+id/tv_nearestShop"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="20dp"
         android:drawableStart="@drawable/ic_location"
         android:drawableEnd="@drawable/ic_arrow_right"
@@ -330,7 +336,7 @@
     <TextView
         android:id="@+id/tv_logout"
         android:layout_width="0dp"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_marginHorizontal="20dp"
         android:drawableStart="@drawable/ic_logout"
         android:drawablePadding="12dp"
@@ -343,8 +349,6 @@
         app:layout_constraintEnd_toEndOf="parent" />
  />
 
-
-    <!-- ── BOTTOM NAV ── -->
     <LinearLayout
         android:id="@+id/bottomNav"
         android:layout_width="0dp"

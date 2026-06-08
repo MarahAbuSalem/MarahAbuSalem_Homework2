@@ -5,7 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/bg_screen">
 
-    <!-- ── TOP BAR ── -->
     <ImageButton
         android:id="@+id/btn_back"
         android:layout_width="40dp"
@@ -25,7 +24,6 @@
         android:background="?attr/selectableItemBackgroundBorderless"
         android:contentDescription="@string/cd_edit" />
 
-    <!-- ── AVATAR ── -->
     <ImageView
         android:id="@+id/img_avatar"
         android:layout_width="90dp"
@@ -38,7 +36,6 @@
         android:clipToOutline="true"
         android:contentDescription="@string/cd_avatar" />
 
-    <!-- ── NAME ── -->
     <TextView
         android:id="@+id/tv_name"
         android:layout_width="wrap_content"
@@ -51,7 +48,6 @@
         android:textStyle="bold"
         android:textColor="@color/text_primary" />
 
-    <!-- ── LOCATION ── -->
     <TextView
         android:id="@+id/tv_location"
         android:layout_width="wrap_content"
@@ -63,16 +59,16 @@
         android:textSize="13sp"
         android:textColor="@color/text_hint" />
 
-    <!-- ── STATS BAR ── -->
-    <LinearLayout
+   <LinearLayout
         android:id="@+id/layout_stats"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tv_location"
         android:layout_marginHorizontal="28dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="35dp"
         android:orientation="horizontal"
-        android:background="@drawable/stats_bar_bg">
+        android:background="@drawable/stats_bar_bg"
+       android:elevation="8dp">
 
         <LinearLayout
             android:layout_width="0dp"
@@ -152,13 +148,12 @@
         </LinearLayout>
     </LinearLayout>
 
-    <!-- ── MENU ITEMS ── -->
     <TextView
         android:id="@+id/tv_personalInfo"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/layout_stats"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_personal_info"
         android:textSize="14sp"
@@ -171,7 +166,7 @@
     <TextView
         android:id="@+id/tv_yourOrder"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tv_personalInfo"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_your_order"
@@ -185,7 +180,7 @@
     <TextView
         android:id="@+id/tv_favourites"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tv_yourOrder"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_favourites"
@@ -199,7 +194,7 @@
     <TextView
         android:id="@+id/tv_payment"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tv_favourites"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_payment"
@@ -213,7 +208,7 @@
     <TextView
         android:id="@+id/tv_recommended"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tv_payment"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_recommended"
@@ -226,7 +221,7 @@
     <TextView
         android:id="@+id/tv_nearestShop"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tv_recommended"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_nearest_shop"
@@ -240,7 +235,7 @@
     <TextView
         android:id="@+id/tv_logout"
         android:layout_width="match_parent"
-        android:layout_height="35dp"
+        android:layout_height="30dp"
         android:layout_below="@id/tv_nearestShop"
         android:layout_marginHorizontal="30dp"
         android:text="@string/menu_logout"
@@ -259,7 +254,7 @@
         android:orientation="horizontal"
         android:background="@drawable/bottom_nav_bar"
         android:layout_marginHorizontal="33dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center_vertical"
         android:paddingHorizontal="8dp">
 
