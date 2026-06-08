@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Brand / Primary -->
+    <color name="primary_green">#3DAA88</color>
+    <color name="primary_green_dark">#2E8A6E</color>
+
+    <!-- Backgrounds -->
+    <color name="bg_white">#FFFFFF</color>
+    <color name="bg_screen">#f6f6f6</color>
+
+    <!-- Text -->
+    <color name="text_primary">#1A1A1A</color>
+    <color name="text_secondary">#333333</color>
+    <color name="text_hint">#888888</color>
+    <color name="text_on_primary">#FFFFFF</color>
+
+    <!-- Dividers & Borders -->
+    <color name="divider">#aaa</color>
+    <color name="stat_divider">#44FFFFFF</color>
+
+    <!-- Avatar placeholder -->
+    <color name="avatar_placeholder">#CCCCCC</color>
+
+    <!-- Bottom Nav -->
+    <color name="bottom_nav_bg">#FFFFFF</color>
+    <color name="bottom_nav_active_bg">#3DAA88</color>
+
+</resources>

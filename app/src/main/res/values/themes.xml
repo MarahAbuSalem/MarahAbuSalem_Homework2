@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Homework02" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">#3DAA88</item>
+        <item name="colorPrimaryVariant">#2E8A6E</item>
+        <item name="materialButtonStyle">@style/GreenButton</item>
+    </style>
+
+    <style name="GreenButton" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">#3DAA88</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+
+</resources>
