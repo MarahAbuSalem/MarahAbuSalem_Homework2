@@ -1,34 +1,41 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
-    android:padding="32dp">
+    android:padding="35dp"
+    android:background="@color/bg_screen">
+
     <TextView
+        android:id="@+id/tv_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile Screens Demo"
+        android:text="Profile Screens "
         android:textSize="20sp"
         android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_openRelative"
         android:layout_marginBottom="32dp"/>
 
     <Button
-        android:id="@+id/btnOpenRelative"
+        android:id="@+id/btn_openRelative"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:text="Open Screen 1 (RelativeLayout)"
-        android:backgroundTint="#3DAA88"
-        android:textColor="#FFFFFF"
-        style="@style/Widget.AppCompat.Button" />
+        android:text="RelativeLayout Screen"
+        android:backgroundTint="@color/primary_green"
+        android:textColor="@color/text_primary"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@+id/btnOpenConstraint"
+        android:id="@+id/btn_openConstraint"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Open Screen 2 (ConstraintLayout)"
-        android:backgroundTint="#3DAA88"
-        android:textColor="#FFFFFF"
-        style="@style/Widget.AppCompat.Button" />
-</LinearLayout>
+        android:text="ConstraintLayout Screen"
+        android:backgroundTint="@color/primary_green"
+        android:textColor="@color/text_primary"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_below="@id/btn_openRelative" />
+
+</RelativeLayout>

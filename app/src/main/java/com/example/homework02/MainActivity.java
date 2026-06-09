@@ -11,8 +11,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btnRelative = findViewById(R.id.btnOpenRelative);
-        Button btnConstraint = findViewById(R.id.btnOpenConstraint);
+        Button btnRelative = findViewById(R.id.btn_openRelative);
+        Button btnConstraint = findViewById(R.id.btn_openConstraint);
 
         btnRelative.setOnClickListener(v ->
                 startActivity(new Intent(this, ProfileRelativeActivity.class))
